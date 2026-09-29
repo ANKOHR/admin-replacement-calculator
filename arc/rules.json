@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "judgment": ["negotiat", "discretion", "relationship", "ambig", "judgment", "decide", "approve", "resolve disputes", "sensitive"],
+  "routine": ["route", "categorize", "copy", "validate", "match", "schedule", "send", "record", "reconcile"],
+  "assistance": ["draft", "summarize", "prepare"],
+  "structured": ["rules", "template", "structured", "fixed", "checklist", "exact"],
+  "savings": {
+    "automatable": ["0.60", "0.85"],
+    "hybrid": ["0.15", "0.35"],
+    "human-judgment": ["0", "0"]
+  },
+  "complexity": {"automatable": 1, "hybrid": 2},
+  "assumptions": [
+    "Declared weekly hours and percentages describe a typical week.",
+    "Tasks within a responsibility receive equal time unless separated into their own responsibility.",
+    "Automatable savings assume clean structured inputs, stable rules, access permission and exception review: 60% to 85%.",
+    "Hybrid savings assume software assists and a human reviews every decision: 15% to 35%.",
+    "Human-judgment tasks receive zero savings; setup, adoption and data quality may reduce realized savings.",
+    "Ranges are heuristic scenarios, not confidence intervals or guaranteed outcomes."
+  ]
+}

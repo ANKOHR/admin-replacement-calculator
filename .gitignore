@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+build/
+dist/
+arc-prompt.txt
+arc-launch.py
+arc-codex.log
+*.log
+*-prompt.txt
+*-launch.py
+reports/
