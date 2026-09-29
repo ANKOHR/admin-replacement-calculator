@@ -15,6 +15,9 @@ test = ["pytest>=8"]
 [project.scripts]
 arc = "arc.cli:main"
 
+[tool.setuptools]
+packages = ["arc"]
+
 [tool.setuptools.package-data]
 arc = ["rules.json"]
 

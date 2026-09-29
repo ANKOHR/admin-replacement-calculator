@@ -159,6 +159,7 @@ def markdown(data):
     lines = ["> " + BANNER, "", "## What stays human", ""]
     lines += ["- " + safe(item["text"]) + ": " + safe(item["reason"]) for item in data["stays_human"]]
     lines += ["", RESIDUAL, "", "# " + safe(data["title"]), "", "Fictional synthetic role.", "",
+              "Tools: " + ", ".join(safe(t) for t in data["tools"]), "",
               "Weekly savings hours: " + " to ".join(data["savings_hours"]),
               "Residual weekly hours: " + " to ".join(data["residual_hours"]), "", "## Tasks", "",
               "| Task | Source line | Class | Hours | Savings hours | Rationale and firing rules |",
